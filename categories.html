@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Categories - Campus Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Light Theme Header -->
+  <header class="navbar page-nav">
+    <div class="logo">
+      <div class="brand-badge">
+        <i class="fa-solid fa-lightbulb spot-left"></i>
+        <i class="fa-solid fa-graduation-cap cap-center"></i>
+        <i class="fa-solid fa-microphone mic-right"></i>
+        <i class="fa-solid fa-ticket ticket-bottom"></i>
+      </div>
+      <div class="logo-text-group">
+        <span class="logo-campus">Campus</span>
+        <span class="logo-connect">Connect</span>
+      </div>
+    </div>
+
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="categories.html" class="active">Categories</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact & Feedback</a>
+      <div id="authNavContainer" class="auth-nav-group"></div>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <div class="section-title categories-highlight-title">
+      <span class="dot-line left"></span>
+      <h2 class="categories-banner-text">Event Categories Directory</h2>
+      <span class="dot-line right"></span>
+    </div>
+
+    <!-- 1) Corporate & Business Events -->
+    <section id="corporate" class="category-group">
+      <div class="group-heading">
+        <i class="fa-solid fa-briefcase group-icon"></i>
+        <h2>1) Corporate and Business Events</h2>
+      </div>
+
+      <div class="sub-event-grid">
+        <div class="detailed-event-card">
+          <div class="card-badge">Academic & Corporate</div>
+          <h3>Conferences & Seminars</h3>
+          <p class="card-summary">Professional gatherings for industry learning, technical keynote presentations, and panel discussions[cite: 1].</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Grand Auditorium / Conference Hall</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 4 to 8 Hours</li>
+            <li><i class="fa-solid fa-users"></i> <strong>Capacity:</strong> 150 – 500 Attendees</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Stage Backdrop, Roll-up Standees & Badges</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $450 / session</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Conferences & Seminars" data-details="Equipped with dual HD projectors, high-grade podium audio, stage LED lighting, complimentary coffee/snack bar setup, and custom printed ID badges with lanyard kits.">More Details</button>
+            <a href="register.html?event=Conferences and Seminars" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+
+        <div class="detailed-event-card">
+          <div class="card-badge">Commercial Expo</div>
+          <h3>Trade Shows & Exhibitions</h3>
+          <p class="card-summary">Expos where companies set up kiosks and product displays to connect with prospective business buyers and partners[cite: 1].</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Open Expo Gallery / Exhibition Pavilion</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> Full Day (8 – 12 Hours)</li>
+            <li><i class="fa-solid fa-users"></i> <strong>Capacity:</strong> 500 – 2,000 Visitors</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Outdoor Flex Banners, Directional Signage</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $900 / day</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Trade Shows & Exhibitions" data-details="Equipped with modular partition stalls (3x3m), high-capacity stable electrical outlets per kiosk, public address speakers, and perimeter entry control passes.">More Details</button>
+            <a href="register.html?event=Trade Shows and Exhibitions" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+
+        <div class="detailed-event-card">
+          <div class="card-badge">Professional Networking</div>
+          <h3>Networking Events</h3>
+          <p class="card-summary">Curated casual business meetups designed for industry leaders, founders, and students to build business contacts[cite: 1].</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Business Lounge / Rooftop Terrace</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 3 to 5 Hours</li>
+            <li><i class="fa-solid fa-users"></i> <strong>Capacity:</strong> 50 – 120 Guests</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Personalized Table Flex & Agenda Flyers</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $300 / evening</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Networking Events" data-details="Includes high-top standing cocktail tables, ambient background acoustic audio system, digital business card exchange kiosk, and finger food catering stations.">More Details</button>
+            <a href="register.html?event=Networking Events" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2) Entertainment & Cultural Events -->
+    <section id="entertainment" class="category-group">
+      <div class="group-heading">
+        <i class="fa-solid fa-masks-theater group-icon"></i>
+        <h2>2) Entertainment and Cultural Events</h2>
+      </div>
+
+      <div class="sub-event-grid">
+        <div class="detailed-event-card">
+          <div class="card-badge">Live Concerts</div>
+          <h3>Live Music & Festivals</h3>
+          <p class="card-summary">High-octane musical concerts, outdoor band tours, and multi-genre musical stages[cite: 1].</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Open-Air Amphitheater / Campus Grounds</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 6 to 10 Hours</li>
+            <li><i class="fa-solid fa-users"></i> <strong>Capacity:</strong> 800 – 3,500 Audience</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Mega Stage Banners, Glow Bands & Tickets</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $1,200 / gig</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Live Music & Festivals" data-details="Includes line-array concert stage audio, laser/strobe lighting trusses, green rooms for bands, artist stage monitors, security barricades, and paramedic emergency first-aid station setup.">More Details</button>
+            <a href="register.html?event=Live Music and Festivals" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+
+        <div class="detailed-event-card">
+          <div class="card-badge">Drama & Arts</div>
+          <h3>Theatrical Performances</h3>
+          <p class="card-summary">Stage plays, musicals, dance routines, and classical arts performances in an acoustic auditorium[cite: 1].</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Acoustic Theater Hall / Opera Stage</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 3 to 6 Hours</li>
+            <li><i class="fa-solid fa-users"></i> <strong>Capacity:</strong> 200 – 600 Viewers</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Curtain Flex Backdrop & Play Brochures</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $550 / show</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Theatrical Performances" data-details="Comes with automated curtain motorized pulley systems, motorized follow spotlights, multi-channel backstage communication headsets, and tiered plush seating.">More Details</button>
+            <a href="register.html?event=Theatrical Performances" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+
+        <div class="detailed-event-card">
+          <div class="card-badge">Humor & Live Club</div>
+          <h3>Comedy Shows</h3>
+          <p class="card-summary">Live stand-up comedy nights, open mic competitions, and comic acts[cite: 1].</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Intimate Studio Gallery / Mini Banquet</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 2 to 4 Hours</li>
+            <li><i class="fa-solid fa-users"></i> <strong>Capacity:</strong> 80 – 250 Guests</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Photo Wall Banner & Comedy Badges</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $320 / event</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Comedy Shows" data-details="Features a single vintage condenser mic on chrome stand, warm single spotlight, low ceiling acoustic sound proofing, cabaret seating layout, and beverage counter integration.">More Details</button>
+            <a href="register.html?event=Comedy Shows" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) Social & Community Events -->
+    <section id="social" class="category-group">
+      <div class="group-heading">
+        <i class="fa-solid fa-cake-candles group-icon"></i>
+        <h2>3) Social and Community Events</h2>
+      </div>
+
+      <h3 class="subgroup-title"><i class="fa-solid fa-champagne-glasses"></i> Private Celebrations & Catering Logistics[cite: 1]</h3>
+      <div class="sub-event-grid">
+        <div class="detailed-event-card highlight-card">
+          <div class="card-badge">Wedding Gala</div>
+          <h3>Weddings & Receptions</h3>
+          <p class="card-summary">Comprehensive marriage ceremonies, mandap/altar decor, photography, and luxury dining[cite: 1].</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Royal Palace Banquet / Grand Lawn</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 8 to 14 Hours</li>
+            <li><i class="fa-solid fa-utensils"></i> <strong>Dining Capacity:</strong> 300 – 1,200 Food Covers</li>
+            <li><i class="fa-solid fa-user-tie"></i> <strong>Catering Staff:</strong> 30 – 50 Waiters & Chefs</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Welcome Arch Flex, Floral Entrance Boards</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $2,200 / package</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Wedding & Receptions" data-details="Complete 5-course hot multi-cuisine buffet, live cooking chaat/barbecue counters, bridal green room, thematic flower stage decor, dedicated dining table stewards, and cleanup crew included.">More Details</button>
+            <a href="register.html?event=Weddings" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+
+        <div class="detailed-event-card">
+          <div class="card-badge">Birthday Party</div>
+          <h3>Birthday Celebrations</h3>
+          <p class="card-summary">Kids theme parties, milestone 18th/21st bashes, customized cake-cutting setups, and music[cite: 1].</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Celebration Hall / Garden Gazebo</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 3 to 5 Hours</li>
+            <li><i class="fa-solid fa-utensils"></i> <strong>Dining Capacity:</strong> 50 – 150 People</li>
+            <li><i class="fa-solid fa-user-tie"></i> <strong>Catering Staff:</strong> 6 – 10 Service Stewards</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Custom Name Vinyl Banner & Cutouts</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $380 / party</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Birthday Celebrations" data-details="Includes balloon arch, customized birthday cake display podium, smoke fog machine, kids food station (burgers, nuggets, milkshakes), and DJ dance sound rig.">More Details</button>
+            <a href="register.html?event=Birthdays" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+
+        <div class="detailed-event-card">
+          <div class="card-badge">Milestone Gala</div>
+          <h3>Anniversary Celebrations</h3>
+          <p class="card-summary">Silver, golden, and romantic anniversary reunions for couples, relatives, and close acquaintances[cite: 1].</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Crystal Banquet / Club Ballroom</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 4 to 6 Hours</li>
+            <li><i class="fa-solid fa-utensils"></i> <strong>Dining Capacity:</strong> 80 – 250 Diners</li>
+            <li><i class="fa-solid fa-user-tie"></i> <strong>Catering Staff:</strong> 10 – 15 Dedicated Waiters</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Commemorative Photo Memory Wall Banner</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $520 / gathering</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Anniversary Celebrations" data-details="Offers candle-lit dining tables, memory slideshow LED projection screen, romantic live violinist or acoustic duo, and champagne toast flute service.">More Details</button>
+            <a href="register.html?event=Anniversaries" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="subgroup-title" style="margin-top: 40px;"><i class="fa-solid fa-people-group"></i> Community Gatherings Subdivisions[cite: 1]</h3>
+      <div class="sub-event-grid">
+        <div class="detailed-event-card">
+          <div class="card-badge">Athletics & Games</div>
+          <h3>Sports Meet & Tournaments</h3>
+          <p class="card-summary">College football, cricket matches, track tournaments, or inter-hostel league championships.</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Campus Sports Complex / Turf Arena</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 5 to 9 Hours</li>
+            <li><i class="fa-solid fa-users"></i> <strong>Capacity:</strong> 200 – 1,000 Spectators</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Scoreboard Banner & Winner Cheques</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $400 / tournament</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Sports Meet & Tournaments" data-details="Covers official referee stands, digital scoreboards, field line marking, hydration energy drink corners, trophy presentation podiums, and player medical tents.">More Details</button>
+            <a href="register.html?event=Sports Tournament" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+
+        <div class="detailed-event-card">
+          <div class="card-badge">Hands-On Studio</div>
+          <h3>Art & Craft Workshops</h3>
+          <p class="card-summary">Pottery classes, canvas painting, resin crafts, DIY design workshops, and exhibitions[cite: 1].</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Creative Art Studio / Atrium Gallery</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 2 to 4 Hours</li>
+            <li><i class="fa-solid fa-users"></i> <strong>Capacity:</strong> 25 – 80 Participants</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Workshop Guide Sheets & Wall Banners</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $220 / batch</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Art & Craft Workshops" data-details="Includes easels, pottery wheels, waterproof floor tarps, painting materials, instructor headset, and takeaway gift packaging for handmade crafts.">More Details</button>
+            <a href="register.html?event=Art and Craft Workshop" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+
+        <div class="detailed-event-card">
+          <div class="card-badge">Nightlife & Clubs</div>
+          <h3>Social Mixers & DJ Nights</h3>
+          <p class="card-summary">Youth fan meetups, student pub clubbing socials, EDM DJ nights, and mixers[cite: 1].</p>
+          <ul class="spec-list">
+            <li><i class="fa-solid fa-building"></i> <strong>Venue:</strong> Underground Club Lounge / Rooftop Bar</li>
+            <li><i class="fa-solid fa-clock"></i> <strong>Duration:</strong> 4 to 6 Hours (Night)</li>
+            <li><i class="fa-solid fa-users"></i> <strong>Capacity:</strong> 100 – 400 Clubbers</li>
+            <li><i class="fa-solid fa-print"></i> <strong>Printing:</strong> Neon Flex Board, VIP Wristbands</li>
+            <li><i class="fa-solid fa-tag"></i> <strong>Starting Price:</strong> $650 / night</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn-secondary modal-trigger" data-title="Social Mixers & DJ Nights" data-details="Provides high-wattage bass sound system, strobe strobe lights, DJ console mixer gear, bouncer security check at door, mocktail bar, and VIP couch enclosures.">More Details</button>
+            <a href="register.html?event=Social Mixer (DJ Night)" class="btn-orange">Book This Event</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <span class="logo-campus">Campus</span>
+          <span class="logo-connect">Connect</span>
+        </div>
+        <p class="footer-about-text">
+          Campus Connect is a comprehensive university event coordination ecosystem bridging attendees, event hosts, and organizers with real-time logistics and reservations.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Dashboard & Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+          <li><a href="categories.html"><i class="fa-solid fa-angle-right"></i> Categories Directory</a></li>
+          <li><a href="register.html"><i class="fa-solid fa-angle-right"></i> Event Registration</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Feedback</a></li>
+          <li><a href="profile.html"><i class="fa-solid fa-angle-right"></i> User Profile</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Event Portfolios</h4>
+        <ul class="footer-links">
+          <li><a href="categories.html#corporate"><i class="fa-solid fa-angle-right"></i> Corporate Conferences</a></li>
+          <li><a href="categories.html#entertainment"><i class="fa-solid fa-angle-right"></i> Cultural & Live Festivals</a></li>
+          <li><a href="categories.html#social"><i class="fa-solid fa-angle-right"></i> Private Celebrations</a></li>
+          <li><a href="categories.html#social"><i class="fa-solid fa-angle-right"></i> Sports & DJ Mixers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Campus Avenue, Student Center Building 3, University City</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>support@campusconnect.edu</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+1 (800) 456-7890</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divider">
+      <span class="line"></span>
+      <p>&copy; 2026 Campus Connect: All Rights Reserved</p>
+      <span class="line"></span>
+    </div>
+  </footer>
+
+  <!-- Details Popup Modal -->
+  <div id="detailsModal" class="modal">
+    <div class="modal-content details-modal-content">
+      <button class="close-btn" id="closeDetailsBtn">&times;</button>
+      <div class="modal-badge-icon"><i class="fa-solid fa-circle-info"></i></div>
+      <h3 id="detailsTitle">Event Details</h3>
+      <p id="detailsBody" class="details-text"></p>
+      <a id="detailsBookBtn" href="register.html" class="btn-orange" style="margin-top: 15px; width: 100%;">Book This Package Now</a>
+    </div>
+  </div>
+
+  <!-- Unified Auth Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content auth-modal-box">
+      <button class="close-btn" id="closeLoginBtn">&times;</button>
+      <h3 id="authModalTitle">Login to Your Account</h3>
+      <p id="authModalDesc" class="auth-desc">Enter your credentials to continue.</p>
+
+      <form id="authForm" class="styled-form">
+        <label for="authUsername">Username</label>
+        <input type="text" id="authUsername" placeholder="Enter unique username" required />
+
+        <div id="emailGroup" style="display: none;">
+          <label for="authEmail">Email Address</label>
+          <input type="email" id="authEmail" placeholder="Enter valid email" />
+        </div>
+
+        <div id="passwordGroup">
+          <label for="authPassword">Password</label>
+          <input type="password" id="authPassword" placeholder="Enter password" required />
+        </div>
+
+        <div id="confirmPasswordGroup" style="display: none;">
+          <label for="authConfirmPassword">Confirm Password</label>
+          <input type="password" id="authConfirmPassword" placeholder="Confirm your password" />
+        </div>
+
+        <button type="submit" id="authSubmitBtn" class="btn-orange submit-full">Login</button>
+      </form>
+
+      <form id="forgotForm" class="styled-form" style="display: none;">
+        <label for="forgotUsername">Username</label>
+        <input type="text" id="forgotUsername" placeholder="Enter your registered username" required />
+
+        <label for="forgotEmail">Registered Email</label>
+        <input type="email" id="forgotEmail" placeholder="Enter your account email" required />
+
+        <label for="forgotNewPassword">New Password</label>
+        <input type="password" id="forgotNewPassword" placeholder="Create a new password" required />
+
+        <label for="forgotConfirmPassword">Confirm New Password</label>
+        <input type="password" id="forgotConfirmPassword" placeholder="Confirm new password" required />
+
+        <button type="submit" class="btn-orange submit-full">Reset & Update Password</button>
+      </form>
+
+      <div class="auth-toggle-box">
+        <div id="forgotPasswordLinkContainer">
+          <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+        </div>
+        <a href="#" id="toggleAuthMode">Don't have an account? <strong>Sign Up</strong></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

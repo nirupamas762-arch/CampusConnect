@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Connect - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Light Theme Header -->
+  <header class="navbar">
+    <div class="logo">
+      <div class="brand-badge">
+        <i class="fa-solid fa-lightbulb spot-left"></i>
+        <i class="fa-solid fa-graduation-cap cap-center"></i>
+        <i class="fa-solid fa-microphone mic-right"></i>
+        <i class="fa-solid fa-ticket ticket-bottom"></i>
+      </div>
+      <div class="logo-text-group">
+        <span class="logo-campus">Campus</span>
+        <span class="logo-connect">Connect</span>
+      </div>
+    </div>
+
+    <!-- 3-Line Hamburger Button -->
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact & Feedback</a>
+      <div id="authNavContainer" class="auth-nav-group"></div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Connecting People Through Events</h1>
+      <p>Organize, participate, and celebrate corporate, cultural, and social events.</p>
+      <a href="categories.html" class="btn-orange hero-btn">Explore Categories</a>
+    </div>
+
+    <div class="wave-divider top-wave">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Featured Event Categories Section -->
+ <section class="events-section">
+  <!-- Added the gradient title classes here -->
+  <div class="section-title categories-highlight-title">
+    <span class="dot-line left"></span>
+    <h2 class="categories-banner-text">Featured Event Categories</h2>
+    <span class="dot-line right"></span>
+  </div>
+
+    <div class="events-container">
+      <div class="event-card">
+        <div class="card-image corp-img"></div>
+        <div class="card-body">
+          <h3>Corporate & Business</h3>
+          <p class="event-desc">Conferences, seminars, trade shows, exhibitions, and networking meetups[cite: 1].</p>
+          <div class="card-btn-group">
+            <a href="categories.html#corporate" class="btn-secondary">View Details</a>
+            <a href="register.html?cat=Corporate" class="btn-orange">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="card-image cultural-img"></div>
+        <div class="card-body">
+          <h3>Entertainment & Cultural</h3>
+          <p class="event-desc">Live music, festivals, theatrical stage shows, and stand-up comedy[cite: 1].</p>
+          <div class="card-btn-group">
+            <a href="categories.html#entertainment" class="btn-secondary">View Details</a>
+            <a href="register.html?cat=Entertainment" class="btn-orange">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="card-image social-img"></div>
+        <div class="card-body">
+          <h3>Social & Community</h3>
+          <p class="event-desc">Private celebrations, local club gatherings, meetups, and casual workshops[cite: 1].</p>
+          <div class="card-btn-group">
+            <a href="categories.html#social" class="btn-secondary">View Details</a>
+            <a href="register.html?cat=Social" class="btn-orange">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expanded Light Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <!-- Col 1: About -->
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <span class="logo-campus">Campus</span>
+          <span class="logo-connect">Connect</span>
+        </div>
+        <p class="footer-about-text">
+          Campus Connect is a event coordination ecosystem bridging attendees, event hosts, and organizers with real-time logistics and reservations.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Dashboard Links -->
+      <div class="footer-col">
+        <h4>Dashboard & Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+          <li><a href="categories.html"><i class="fa-solid fa-angle-right"></i> Categories Directory</a></li>
+          <li><a href="register.html"><i class="fa-solid fa-angle-right"></i> Event Registration</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Feedback</a></li>
+          <li><a href="profile.html"><i class="fa-solid fa-angle-right"></i> User Profile</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Categories -->
+      <div class="footer-col">
+        <h4>Event Portfolios</h4>
+        <ul class="footer-links">
+          <li><a href="categories.html#corporate"><i class="fa-solid fa-angle-right"></i> Corporate Conferences</a></li>
+          <li><a href="categories.html#entertainment"><i class="fa-solid fa-angle-right"></i> Cultural & Live Festivals</a></li>
+          <li><a href="categories.html#social"><i class="fa-solid fa-angle-right"></i> Private Celebrations</a></li>
+          <li><a href="categories.html#social"><i class="fa-solid fa-angle-right"></i> Sports & DJ Mixers</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Find Us -->
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Campus Avenue, Student Center Building 3, University City</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>support@campusconnect.edu</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+1 (800) 456-7890</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divider">
+      <span class="line"></span>
+      <p>&copy; 2026 Campus Connect: All Rights Reserved</p>
+      <span class="line"></span>
+    </div>
+  </footer>
+
+  <!-- Unified Auth Modal (Login / Signup / Forgot Password) -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content auth-modal-box">
+      <button class="close-btn" id="closeLoginBtn">&times;</button>
+      <h3 id="authModalTitle">Login to Your Account</h3>
+      <p id="authModalDesc" class="auth-desc">Enter your credentials to continue.</p>
+
+      <!-- Main Login / Signup Form -->
+      <form id="authForm" class="styled-form">
+        <label for="authUsername">Username</label>
+        <input type="text" id="authUsername" placeholder="Enter unique username" required />
+
+        <div id="emailGroup" style="display: none;">
+          <label for="authEmail">Email Address</label>
+          <input type="email" id="authEmail" placeholder="Enter valid email" />
+        </div>
+
+        <div id="passwordGroup">
+          <label for="authPassword">Password</label>
+          <input type="password" id="authPassword" placeholder="Enter password" required />
+        </div>
+
+        <div id="confirmPasswordGroup" style="display: none;">
+          <label for="authConfirmPassword">Confirm Password</label>
+          <input type="password" id="authConfirmPassword" placeholder="Confirm your password" />
+        </div>
+
+        <button type="submit" id="authSubmitBtn" class="btn-orange submit-full">Login</button>
+      </form>
+
+      <!-- Forgot Password Reset Form -->
+      <form id="forgotForm" class="styled-form" style="display: none;">
+        <label for="forgotUsername">Username</label>
+        <input type="text" id="forgotUsername" placeholder="Enter your registered username" required />
+
+        <label for="forgotEmail">Registered Email</label>
+        <input type="email" id="forgotEmail" placeholder="Enter your account email" required />
+
+        <label for="forgotNewPassword">New Password</label>
+        <input type="password" id="forgotNewPassword" placeholder="Create a new password" required />
+
+        <label for="forgotConfirmPassword">Confirm New Password</label>
+        <input type="password" id="forgotConfirmPassword" placeholder="Confirm new password" required />
+
+        <button type="submit" class="btn-orange submit-full">Reset & Update Password</button>
+      </form>
+
+      <div class="auth-toggle-box">
+        <div id="forgotPasswordLinkContainer">
+          <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+        </div>
+        <a href="#" id="toggleAuthMode">Don't have an account? <strong>Sign Up</strong></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

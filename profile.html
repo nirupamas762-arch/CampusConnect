@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile - Campus Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Light Theme Header -->
+  <header class="navbar page-nav">
+    <div class="logo">
+      <div class="brand-badge">
+        <i class="fa-solid fa-lightbulb spot-left"></i>
+        <i class="fa-solid fa-graduation-cap cap-center"></i>
+        <i class="fa-solid fa-microphone mic-right"></i>
+        <i class="fa-solid fa-ticket ticket-bottom"></i>
+      </div>
+      <div class="logo-text-group">
+        <span class="logo-campus">Campus</span>
+        <span class="logo-connect">Connect</span>
+      </div>
+    </div>
+
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact & Feedback</a>
+      <button id="logoutBtn" class="btn-secondary nav-btn"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+    </nav>
+  </header>
+
+  <main class="page-container form-center-container">
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="profile-avatar"><i class="fa-solid fa-circle-user"></i></div>
+        <div class="profile-meta">
+          <h2 id="profileUsername">Authenticated User</h2>
+          <p id="profileEmail" class="profile-email-tag"></p>
+          <span class="status-tag active-badge"><i class="fa-solid fa-check"></i> Verified Account</span>
+        </div>
+      </div>
+
+      <div class="profile-toolbar">
+        <h3 style="color: var(--primary-navy); margin: 0;">Your Event Bookings</h3>
+        <a href="register.html" class="btn-orange" style="font-size: 13px; padding: 7px 16px;">+ Book New Event</a>
+      </div>
+
+      <!-- Visible only if THIS specific user has no bookings -->
+      <div id="noBookings" class="no-bookings-box" style="display: none;">
+        <i class="fa-regular fa-calendar-xmark"></i>
+        <p>You have no active event reservations.</p>
+        <a href="register.html" class="btn-secondary" style="margin-top: 10px;">Browse & Book Events</a>
+      </div>
+
+      <ul id="bookingList" class="booking-list"></ul>
+
+      <div class="profile-footer-action">
+        <button id="cardLogoutBtn" class="btn-secondary" style="width: 100%;"><i class="fa-solid fa-right-from-bracket"></i> Logout of Account</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <span class="logo-campus">Campus</span>
+          <span class="logo-connect">Connect</span>
+        </div>
+        <p class="footer-about-text">
+          Campus Connect is a comprehensive university event coordination ecosystem bridging attendees, event hosts, and organizers with real-time logistics and reservations.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Dashboard & Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+          <li><a href="categories.html"><i class="fa-solid fa-angle-right"></i> Categories Directory</a></li>
+          <li><a href="register.html"><i class="fa-solid fa-angle-right"></i> Event Registration</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Feedback</a></li>
+          <li><a href="profile.html"><i class="fa-solid fa-angle-right"></i> User Profile</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Event Portfolios</h4>
+        <ul class="footer-links">
+          <li><a href="categories.html#corporate"><i class="fa-solid fa-angle-right"></i> Corporate Conferences</a></li>
+          <li><a href="categories.html#entertainment"><i class="fa-solid fa-angle-right"></i> Cultural & Live Festivals</a></li>
+          <li><a href="categories.html#social"><i class="fa-solid fa-angle-right"></i> Private Celebrations</a></li>
+          <li><a href="categories.html#social"><i class="fa-solid fa-angle-right"></i> Sports & DJ Mixers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Campus Avenue, Student Center Building 3, University City</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>support@campusconnect.edu</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+1 (800) 456-7890</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divider">
+      <span class="line"></span>
+      <p>&copy; 2026 Campus Connect: All Rights Reserved</p>
+      <span class="line"></span>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const session = JSON.parse(localStorage.getItem('currentSession') || 'null');
+
+      // Boot to homepage if not logged in
+      if (!session) {
+        window.location.href = 'index.html';
+        return;
+      }
+
+      document.getElementById('profileUsername').textContent = session.username;
+      document.getElementById('profileEmail').textContent = session.email;
+
+      // Filter bookings strictly by authenticated user
+      const allBookings = JSON.parse(localStorage.getItem('userBookings') || '[]');
+      const userSpecificBookings = allBookings.filter(b => 
+        b.username && b.username.toLowerCase() === session.username.toLowerCase()
+      );
+
+      const bookingList = document.getElementById('bookingList');
+      const noBookings = document.getElementById('noBookings');
+
+      if (userSpecificBookings.length === 0) {
+        noBookings.style.display = 'block';
+      } else {
+        noBookings.style.display = 'none';
+        userSpecificBookings.forEach(b => {
+          const li = document.createElement('li');
+          li.className = 'booking-item';
+          li.innerHTML = `
+            <div>
+              <strong style="color: var(--primary-navy); font-size: 15px;">${b.category}</strong>
+              <div style="font-size: 12.5px; color: #64748b; margin-top: 4px;">
+                <i class="fa-regular fa-calendar-check" style="color: var(--accent-orange-start);"></i> ${b.eventDate} | 
+                <i class="fa-regular fa-envelope"></i> ${b.email}
+              </div>
+            </div>
+            <span class="status-tag">Confirmed</span>
+          `;
+          bookingList.appendChild(li);
+        });
+      }
+
+      // Handle Logouts (Navbar button and Card button)
+      const performLogout = () => {
+        localStorage.removeItem('currentSession');
+        window.location.href = 'index.html';
+      };
+
+      document.getElementById('logoutBtn').addEventListener('click', performLogout);
+      document.getElementById('cardLogoutBtn').addEventListener('click', performLogout);
+
+      // Hamburger button logic for profile page
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const navLinks = document.getElementById('navLinks');
+      if (hamburgerBtn && navLinks) {
+        hamburgerBtn.addEventListener('click', () => {
+          hamburgerBtn.classList.toggle('active');
+          navLinks.classList.toggle('show');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
